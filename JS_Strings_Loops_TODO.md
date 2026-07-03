@@ -3,7 +3,7 @@
 Difficulty tiers per level: Easy → Medium → Strong → Dragon (cumulative — each tier pulls in more concepts from previous levels).
 
 ## Level 0: Absolute Foundations
-- [ ] Theory understood (variables, for-loop anatomy, comparisons, console.log)
+- [X] Theory understood (variables, for-loop anatomy, comparisons, console.log)
 - [ ] Easy: Print "Hello World" 5 times using a loop
 - [ ] Medium: Print numbers 1→10, then 10→1
 - [ ] Strong: Print even numbers 1-20 using modulo
