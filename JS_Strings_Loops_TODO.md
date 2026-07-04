@@ -1,108 +1,124 @@
-# JavaScript Strings & Loops Mastery — Progress Tracker
+# JavaScript Strings & Loops Mastery — Study Progress Tracker
 
-Difficulty tiers per level: Easy → Medium → Strong → Dragon (cumulative — each tier pulls in more concepts from previous levels).
+Learning stages per level: Basic → Applied → Advanced → Cumulative
+Each stage builds on the previous one and prepares for the next level.
 
 ## Level 0: Absolute Foundations
-- [X] Theory understood (variables, for-loop anatomy, comparisons, console.log)
-- [ ] Easy: Print "Hello World" 5 times using a loop
-- [ ] Medium: Print numbers 1→10, then 10→1
-- [ ] Strong: Print even numbers 1-20 using modulo
-- [ ] Dragon: Multiplication table with formatted template literal output
+
+* [x] Core explanation: variables, for-loop anatomy, comparisons, console.log
+* [ ] Basic task: Understand how to print "Hello World" multiple times using a loop
+* [ ] Applied task: Understand how to print numbers in ascending and descending order
+* [ ] Advanced task: Understand how to detect and print even numbers using modulo
+* [ ] Cumulative task: Understand how to build a multiplication table with formatted template literal output
 
 ## Level 1: Pointer Movement (i)
-- [ ] Theory understood (index, text.length, i++/i--, out-of-bounds)
-- [ ] Easy: Print each character with its index
-- [ ] Medium: Print the string in reverse (backward loop)
-- [ ] Strong: Print every 3rd character (i += 3) without going out of bounds
-- [ ] Dragon: Print every adjacent pair of characters + their index, safely
+
+* [ ] Core explanation: index, text.length, i++ / i--, out-of-bounds
+* [ ] Basic task: Understand how to access and print each character with its index
+* [ ] Applied task: Understand how to move through a string in reverse using a backward loop
+* [ ] Advanced task: Understand how to move through a string using steps such as i += 3 without going out of bounds
+* [ ] Cumulative task: Understand how to read adjacent character pairs safely using indexes
 
 ## Level 2: Building New Strings with result
-- [ ] Theory understood (immutability, result += text[i])
-- [ ] Easy: Copy a string using result
-- [ ] Medium: Copy string without first and last character
-- [ ] Strong: Reverse string using result = char + result (no backward loop)
-- [ ] Dragon: Split even-index and odd-index characters into one result, log each step
+
+* [ ] Core explanation: string immutability, result += text[i]
+* [ ] Basic task: Understand how to copy a string manually using result
+* [ ] Applied task: Understand how to copy a string while excluding the first and last characters
+* [ ] Advanced task: Understand how to reverse a string using result = char + result without a backward loop
+* [ ] Cumulative task: Understand how to separate even-index and odd-index characters into one result while tracing each step
 
 ## Level 3: Deletion via Skipping
-- [ ] Theory understood (skip logic = deletion)
-- [ ] Easy: Remove all spaces from a sentence
-- [ ] Medium: Remove all digits from a string
-- [ ] Strong: Remove only the first occurrence of a character (flag-based)
-- [ ] Dragon: Clean a username (spaces + digits + first duplicate letter only)
+
+* [ ] Core explanation: skip logic as a way to delete characters
+* [ ] Basic task: Understand how to remove spaces from a sentence
+* [ ] Applied task: Understand how to remove digits from a string
+* [ ] Advanced task: Understand how to remove only the first occurrence of a character using a flag
+* [ ] Cumulative task: Understand how to clean a username by removing spaces, digits, and only the first duplicate letter
 
 ## Level 4: Modification & Replacement
-- [ ] Theory understood (replace vs delete vs keep)
-- [ ] Easy: Replace all underscores with spaces
-- [ ] Medium: Replace only the first occurrence of a character
-- [ ] Strong: Replace every digit with double its value
-- [ ] Dragon: Password sanitizer (@ → a, remove dashes, first X deleted / second X → !)
+
+* [ ] Core explanation: the difference between replace, delete, and keep
+* [ ] Basic task: Understand how to replace underscores with spaces
+* [ ] Applied task: Understand how to replace only the first occurrence of a character
+* [ ] Advanced task: Understand how to replace every digit with double its value
+* [ ] Cumulative task: Understand how to sanitize a password using multiple replacement and deletion rules
 
 ## Level 5: Counting with count
-- [ ] Theory understood (why char comparisons work — ASCII/Unicode ranges)
-- [ ] Easy: Count spaces in a sentence
-- [ ] Medium: Count uppercase letters using character range
-- [ ] Strong: Count special characters (not digit, not letter)
-- [ ] Dragon: Count special characters AND build a letters-only result in one loop
+
+* [ ] Core explanation: count variable, character comparisons, ASCII and Unicode ranges
+* [ ] Basic task: Understand how to count spaces in a sentence
+* [ ] Applied task: Understand how to count uppercase letters using character ranges
+* [ ] Advanced task: Understand how to count special characters that are not digits and not letters
+* [ ] Cumulative task: Understand how to count special characters and build a letters-only result in one loop
 
 ## Level 6: Comparing Current vs Previous/Next Character
-- [ ] Theory understood (text[i-1], text[i+1], boundary protection)
-- [ ] Easy: Detect if each character differs from the next one
-- [ ] Medium: Count consecutive "++" occurrences
-- [ ] Strong: Count letters immediately followed by a digit
-- [ ] Dragon: Count negated letters (preceded by "!") + strip "!" into result
+
+* [ ] Core explanation: text[i - 1], text[i + 1], and boundary protection
+* [ ] Basic task: Understand how to compare each character with the next character
+* [ ] Applied task: Understand how to count consecutive "++" occurrences
+* [ ] Advanced task: Understand how to count letters that are immediately followed by a digit
+* [ ] Cumulative task: Understand how to detect negated letters preceded by "!" and remove "!" while building a new result
 
 ## Level 7: Consecutive Duplicates
-- [ ] Theory understood (group logic, N-1 rule)
-- [ ] Easy: Count consecutive duplicate pairs in a word
-- [ ] Medium: Remove consecutive duplicates, keep one per group
-- [ ] Strong: Compress string ("aaabbc" → "a3b2c1")
-- [ ] Dragon: Clean chat spam ("goooood morninggg") + count total spam chars
+
+* [ ] Core explanation: group logic and the N-1 comparison rule
+* [ ] Basic task: Understand how to count consecutive duplicate pairs in a word
+* [ ] Applied task: Understand how to remove consecutive duplicates while keeping one character per group
+* [ ] Advanced task: Understand how to compress a string such as "aaabbc" into "a3b2c1"
+* [ ] Cumulative task: Understand how to clean chat spam such as "goooood morninggg" and count total spam characters
 
 ## Level 8: Global Duplicates
-- [ ] **Scope lesson understood** (variable inside vs outside loop — persistent vs temporary)
-- [ ] Theory understood (nested loops, text[i] === text[j] vs text[i] === text[i+1])
-- [ ] Easy: Count how many times a specific character appears in the whole string
-- [ ] Medium: Nested loop — print each character's total count (redundant printing expected)
-- [ ] Strong: Fix redundant counting using an "already counted" check
-- [ ] Dragon: Find the first non-repeating character (classic interview problem)
+
+* [ ] Core explanation: variable scope inside vs outside loops, persistent vs temporary variables
+* [ ] Core explanation: nested loops, text[i] === text[j], and the difference between global duplicates and consecutive duplicates
+* [ ] Basic task: Understand how to count how many times a specific character appears in the whole string
+* [ ] Applied task: Understand how to use a nested loop to print each character's total count, including the redundant-counting problem
+* [ ] Advanced task: Understand how to prevent redundant counting using an already-counted check
+* [ ] Cumulative task: Understand how to find the first non-repeating character
 
 ## Level 9: Flags (found / boolean state)
-- [ ] Theory understood (false→true "does it exist?" vs true→false "is everything valid?")
-- [ ] Easy: Does the string contain a digit? (loop-based, no includes)
-- [ ] Medium: Are all characters digits?
-- [ ] Strong: Does the string contain any duplicate character?
-- [ ] Dragon: Validate a username (starts with letter + no special chars + no long consecutive repeats)
+
+* [ ] Core explanation: boolean flags, false → true for existence checks, and true → false for validation checks
+* [ ] Basic task: Understand how to detect whether a string contains a digit without using includes()
+* [ ] Applied task: Understand how to check whether all characters are digits
+* [ ] Advanced task: Understand how to detect whether a string contains any duplicate character
+* [ ] Cumulative task: Understand how to validate a username using multiple rules: starts with a letter, contains no special characters, and has no long consecutive repeats
 
 ## Level 10: Nested Loops (formal i & j)
-- [ ] Theory understood (outer/inner loop relationship, when j starts at 0 vs i+1)
-- [ ] Easy: Print every possible (i, j) character pair
-- [ ] Medium: Compare each character only with characters after it (j = i+1)
-- [ ] Strong: Prevent double-counting duplicates using flag + nested loop
-- [ ] Dragon: Sort characters alphabetically (simple Bubble Sort with nested loops)
+
+* [ ] Core explanation: outer loop and inner loop relationship, and when j starts at 0 vs i + 1
+* [ ] Basic task: Understand how to print every possible (i, j) character pair
+* [ ] Applied task: Understand how to compare each character only with the characters after it using j = i + 1
+* [ ] Advanced task: Understand how to prevent double-counting duplicates using a flag with a nested loop
+* [ ] Cumulative task: Understand how to sort characters alphabetically using a simple Bubble Sort with nested loops
 
 ## Level 11: The Window Pattern (i + j)
-- [ ] Theory understood (text[i+j] === word[j], match/mismatch, allMatched)
-- [ ] Easy: Does the string start with a given word? (manual startsWith)
-- [ ] Medium: Does the string contain a given word anywhere? (manual includes)
-- [ ] Strong: Find the first index of a word inside a string
-- [ ] Dragon: Remove every occurrence of a full word from a string
+
+* [ ] Core explanation: text[i + j] === word[j], match, mismatch, and allMatched logic
+* [ ] Basic task: Understand how to manually check whether a string starts with a given word
+* [ ] Applied task: Understand how to manually check whether a string contains a given word anywhere
+* [ ] Advanced task: Understand how to find the first index of a word inside a string
+* [ ] Cumulative task: Understand how to remove every occurrence of a full word from a string
 
 ## Level 12: Manual Control of i
-- [ ] Theory understood (i += pattern.length - 1, jumping after a match)
-- [ ] Easy: Skip a fixed-size chunk of characters (every 3 chars)
-- [ ] Medium: Jump over a matched word entirely, no re-scanning
-- [ ] Strong: Replace every occurrence of a word with a different-length word
-- [ ] Dragon: Manually split a string on a delimiter (no split())
+
+* [ ] Core explanation: controlling i manually, jumping after a match, and using i += pattern.length - 1
+* [ ] Basic task: Understand how to skip a fixed-size chunk of characters
+* [ ] Applied task: Understand how to jump over a matched word entirely without re-scanning
+* [ ] Advanced task: Understand how to replace every occurrence of a word with another word of a different length
+* [ ] Cumulative task: Understand how to manually split a string on a delimiter without using split()
 
 ## Level 13: Building Custom String Functions
-- [ ] Easy: customLength + customAt
-- [ ] Medium: customIncludes + customStartsWith
-- [ ] Strong: customIndexOf + customLastIndexOf + removeDuplicates
-- [ ] Dragon: customSplit + customReplaceAll (fully manual, no built-ins)
+
+* [ ] Basic task: Understand how to build customLength and customAt manually
+* [ ] Applied task: Understand how to build customIncludes and customStartsWith manually
+* [ ] Advanced task: Understand how to build customIndexOf, customLastIndexOf, and removeDuplicates manually
+* [ ] Cumulative task: Understand how to build customSplit and customReplaceAll manually without relying on built-in methods
 
 ## Level 14: Capstone Project — Text Sanitizer & Analyzer
-- [ ] V1 (Easy): Clean the raw string (remove special characters only)
-- [ ] V2 (Medium): + Compute character frequency statistics
-- [ ] V3 (Strong): + Remove consecutive duplicates + replace patterns
-- [ ] V4 (Dragon): + Find and delete a target word + sort unique characters alphabetically
-- [ ] **Ready for Arrays** 🎉
+
+* [ ] V1: Understand how to clean a raw string by removing special characters only
+* [ ] V2: Understand how to compute character frequency statistics
+* [ ] V3: Understand how to remove consecutive duplicates and replace patterns
+* [ ] V4: Understand how to find and delete a target word, then sort unique characters alphabetically
+* [ ] Ready for Arrays
